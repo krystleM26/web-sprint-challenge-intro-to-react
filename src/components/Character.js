@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react";
 import App from "../App";
 import style from "../App.css";
+import arrow from "../images/down-arrow.svg";
 
 // Write your Character component here
 
 const Character = (props) => {
-  const [show, setShow] = useState(false);
+  const [onDisplay, setOnDisplay] = useState(false);
 
   console.log(props);
 
   return (
     <div className="charName">
-      <h3>{props.character.name}</h3>
-      {show && (
+      <div className="arrow">
+        <h3>{props.character.name}</h3>
+        <img onClick={() => setOnDisplay(!onDisplay)} src={arrow} />
+      </div>
+
+      {onDisplay && (
         <ul>
           <li>
             <span>Gender: {props.character.gender}</span>
@@ -37,10 +42,6 @@ const Character = (props) => {
           </li>
         </ul>
       )}
-
-      {/* <button onClick={() => setShow()}>Show</button>
-      <button onClick={() => setHide(false)}>Hide</button> */}
-      <button onClick={() => setShow(!show)}>Toggle</button>
     </div>
   );
 };
