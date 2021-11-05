@@ -4,19 +4,35 @@ import style from '../App.css'
 
 
 
+
 // Write your Character component here
 const Character = (props) => {
-    console.log(props);
+   console.log(props);
 
     return (
         <div className= "charName">
-            <h3>Luke Skywalker</h3>
+            <h3>{props.character.name}</h3>
                 <ul>
+                    <li><span>
+                        Gender: {props.character.gender}
+                    </span></li>
                     <li>
-                        gender:
+                        Height: {props.character.height} cm
                     </li>
                     <li>
-                        age:
+                        Mass: {props.character.mass}
+                    </li>
+                    <li>
+                        Birth Year: {props.character["birth_year"]}
+                    </li>
+                    <li>
+                        Eye Color: {props.character["eye_color"]}
+                    </li>
+                    <li>
+                        Hair Color: {props.character["hair_color"]}
+                    </li>
+                    <li>
+                        Skin Color: {props.character["skin_color"]}
                     </li>
                 </ul>
         </div>

@@ -5,4 +5,16 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.charName {
+  margin: 5%;
+  padding: 5%;
+  background-color: antiquewhite;
+  align-items: center;
+
+}
+
+li:marker {
+  margin: 5px;
+}
 /* write your parent styles in here for your App.js */
