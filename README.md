@@ -12,13 +12,13 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
-- [ ] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
-- [ ] Make commits often! PUSH TO MAIN!!!
-- [ ] You can run tests locally by running npm run test.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [ x] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x ] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
+- [x ] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
+- [ x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
+- [x ] Make commits often! PUSH TO MAIN!!!
+- [x ] You can run tests locally by running npm run test.
+- [x ] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -69,16 +69,20 @@ After finishing your required elements, you can push your work further. These go
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the main branch.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [x ] Submit via Codegrade by committing and pushing any new changes to the main branch.
+- [x ] Check Codegrade for automated feedback.
+- [ x] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [ x] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS is a javascript library created to help support UI development. It tries to solve development issues that occur when creating large applications. It reduces the amount of code that needs to be written which may or may not cause bugs.
 1. Describe component state.
+   A component state is info of the components current situation.
 1. Describe props.
+Props are properties of a function.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+Side effects are items that effect things outside of the scope. You sync them in a React Component by using useEffect() which gives it access to a components state, prop or variable.
