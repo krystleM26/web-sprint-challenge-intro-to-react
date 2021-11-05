@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Character from "./components/Character.js";
+import "./normal.css";
 
 const App = () => {
   const [charList, setCharList] = useState([]);
+  
 
   useEffect(() => {
     charInfo();
@@ -14,7 +16,7 @@ const App = () => {
     axios
       .get("https://swapi.dev/api/people")
       .then((res) => {
-        console.log('data',res.data)
+        console.log("data", res.data);
         setCharList(res.data);
       })
       .catch((err) => {
@@ -31,9 +33,12 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {charList.map((item) => {
-        return <Character  character={item}/>
-      })}
+      <div className="charCards">
+        {charList.map((item, index) => {
+          return <Character character={item} key={index} />;
+        })}
+      </div>
+     
     </div>
   );
 };
